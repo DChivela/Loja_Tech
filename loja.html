@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/output.css">
+    
+    <title>FRECAL (SU), LDA.</title>
+</head>
+
+<body>
+   
+    <!--HEADER-->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/Logo 1.jpg"
+            alt="Logo DCBurguer"
+            class="w-45 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+            />
+            <h1 class="text-3xl mt-4 mb-2 font-bold text-white">
+                FRECAL (SU), LDA.</h1>
+
+                <!-- <span class="
+                text-white font-medium">Bairro Lucrêcia, Rua Boulevard</span> -->
+                <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                    <span class="text-white font-medium">Horário: Seg. a Dom - 08:30 as 22:00</span>
+                </div>
+                <button class="flex items-center gap-5 mt-8 text-white font-bold"
+                id="loja"
+                > <a href="./index.html" class="text-2xl">Página Principal</a> 
+                </button>
+                
+        </div>
+    </header>
+    <!--FIM DO HEADER-->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Conheça os nossos dispositivos
+    </h2>
+
+    <!--INÍCIO DO MENU-->
+    <div id="menu">
+
+        <main class="grid md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <!--PRODUTO ITEM-->
+            <div>
+                <img src="./assets/PC 1 ACER.png"
+                alt="ACER COMPUTADOR PORTÁTIL"
+                class="w-30 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">ACER</p>
+                    <p class="text-sm">COMPUTADOR PORTÁTIL TRAVELMATE N4020 11.6" 4GB/64GB WINDOWS 10 PRO</p>
+                
+                <div  class="flex items-center gap-2 justify-between">
+                <p class="font-bold text-lg">216 392,00 AKZ</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="ACER COMPUTADOR PORTÁTIL"
+                data-price="216392"
+                >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+
+            </div>
+
+            </div>
+            
+            <!--FIM PRODUTO ITEM-->
+
+                        <!--PRODUTO ITEM 2-->
+                        <div>
+                            <img src="./assets/PC 2 HP.png"
+                            alt="HP COMPUTADOR PORTÁTIL"
+                            class="w-30 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                            />
+            
+                            <div>
+                                <p class="font-bold">HP</p>
+                                <p class="text-sm">COMPUTADOR PORTÁTIL 15.6'' N4020 4GB/500GB DVD W11H PRETO +</p>
+                            
+                            <div  class="flex items-center gap-2 justify-between">
+                            <p class="font-bold text-lg">299 990,00 AKZ</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="HP COMPUTADOR PORTÁTIL"
+                            data-price="299990"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                        </div>
+                        </div>
+                        <!--FIM PRODUTO ITEM-->
+
+                                    <!--PRODUTO ITEM 3-->
+            <div>
+                <img src="./assets/PC 3 ASUS.png"
+                alt="ASUS COMPUTADOR PORTÁTIL"
+                class="w-30 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">ASUS</p>
+                    <p class="text-sm">COMPUTADOR PORTÁTIL X515 15.6'' N4020 4GB 256GB SSD W11H</p>
+                
+                <div  class="flex items-center gap-2 justify-between">
+                <p class="font-bold text-lg">344 485,00 AKZ</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="ASUS COMPUTADOR PORTÁTIL"
+                data-price="344485"
+                >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+
+        </div>
+
+     </div>
+            
+            <!--FIM PRODUTO ITEM-->
+
+                        <!--PRODUTO ITEM 4-->
+                        <div>
+                            <img src="./assets/PC 4 LENOVO.png"
+                            alt="LENOVO COMPUTADOR PORTÁTIL"
+                            class="w-30 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                            />
+            
+                            <div>
+                                <p class="font-bold">LENOVO</p>
+                                <p class="text-sm">COMPUTADOR PORTÁTIL 15.6" N4020 4GB/500GB W11 CINZA ESCURO</p>
+                            
+                            <div  class="flex items-center gap-2 justify-between">
+                            <p class="font-bold text-lg">374 434,00 AKZ</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="LENOVO COMPUTADOR PORTÁTIL"
+                            data-price="374434"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                        <!--FIM PRODUTO ITEM 4-->
+
+
+
+                    <!--PRODUTO ITEM 5-->
+                    <div>
+                        <img src="./assets/PS 1 BLACKVIEW.png"
+                        alt="BLACKVIEW COMPUTADOR MINI "
+                        class="w-30 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div>
+                            <p class="font-bold">BLACKVIEW</p>
+                            <p class="text-sm">COMPUTADOR MINI MP60 N5095 W11PRO 8GB+256GB M.2 SSD AZUL</p>
+                        
+                        <div  class="flex items-center gap-2 justify-between">
+                        <p class="font-bold text-lg">211 374,00 AKZ</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="BLACKVIEW COMPUTADOR MINI "
+                        data-price="211374"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                        </div>
+
+                    </div>
+
+                </div>
+                    <!--FIM PRODUTO ITEM 5-->
+
+                    
+                    <!--PRODUTO ITEM 6-->
+                    <div>
+                        <img src="./assets/PS 2 HP.png"
+                        alt="HP COMPUTADOR ALL-IN-ONE"
+                        class="w-30 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div>
+                            <p class="font-bold">HP</p>
+                            <p class="text-sm">COMPUTADOR ALL-IN-ONE 20.7" FHD J4025 4G 256 SSD WINDOWS 11 HOME BRANCO</p>
+                        
+                        <div  class="flex items-center gap-2 justify-between">
+                        <p class="font-bold text-lg">211 374,00 AKZ</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="HP COMPUTADOR ALL-IN-ONE"
+                        data-price="211374"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                        </div>
+
+                    </div>
+
+                </div>
+                    <!--FIM PRODUTO ITEM 6-->
+                        
+
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Impressoras
+            </h2>
+        </div>
+
+        <!--INÍCIO GRID IMPRESSORA-->
+        <div class="grid md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+                <!--IMPRESSORA ITEM 1-->
+                <div>
+                <img src="./assets/IMP 1 HP.png"
+                alt="IMPRESSORA HP INK TANK SMART 750"
+                class="w-30 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="flex gap-2 w-full">
+                    <p class="font-bold">HP</p>
+                    <p class="text-sm">IMPRESSORA INK TANK SMART 750 AIO ADF (15/9)</p>
+                
+                <div  class="flex items-center gap-2 justify-between">
+                <p class="font-bold text-lg">438 435,00 AKZ</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="IMPRESSORA HP INK TANK SMART 750"
+                data-price="438435"
+                >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+                </div>
+
+            </div>
+
+        </div>
+                                    <!--FIM IMPRESSORA ITEM 1-->
+
+         <!--IMPRESSORA ITEM 2-->
+         <div>
+            <img src="./assets/IMP 2 HP.png"
+            alt="HP - IMPRESORA DESKJET E-AIO 2320 ADV"
+            class="w-30 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+
+            <div class="flex gap-2 w-full">
+                <p class="font-bold">HP</p>
+                <p class="text-sm">IMPRESORA DESKJET E-AIO 2320 ADV. (7.5) COM FIO</p>
+            
+            <div  class="flex items-center gap-2 justify-between">
+            <p class="font-bold text-lg">65 949,00 AKZ</p>
+
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="HP - IMPRESORA DESKJET E-AIO 2320 ADV"
+            data-price="65949"
+            >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+            </div>
+
+        </div>
+
+    </div>
+                                <!--FIM IMPRESSORA ITEM 2-->                            
+        </div>
+        <!--FIM GRID IMPRESSORA-->
+        
+        
+    </div>
+    <!--FIM DO MENU-->
+
+    <!--MODAL CART-->
+    <div 
+    class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] overflow-y-auto pt-20 text-xs flex items-center justify-center hidden"
+    
+    id="cart-modal"
+    >
+
+
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mmb-2">Meu carrinho</h2>
+        
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+            <p class="font-bold mt-4">Endereço de entrega:</p>
+            <input
+            type="text"
+            placeholder="Digite o seu endereço completo..."
+            id="address"
+            class="w-full border-2 p-1 rounded my-1"
+            />
+            <p class="text-red-500 hidden" id="address-warn">Digite o seu endereço completo</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1">Finalizar pedido</button>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <!--FIM MODAL CART-->
+
+    <!--BUTTON CART FOOTER-->
+    <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-44 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold"
+        id="cart-btn"
+        >
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    <!--FIM BUTTON CART FOOTER-->
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
