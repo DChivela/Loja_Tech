@@ -94,7 +94,19 @@ function updateCartModal(){
         `
 
 
-        total += item.price * item.quantity;
+        // let total = 0;
+
+        // // Adicione os itens à sua cesta e calcule o total
+        // itens.forEach(item => {
+            total += item.price * item.quantity;
+        // });
+
+        // Arredonde o total para 3 casas decimais
+        // total = total.toFixed(3);
+
+        // Exiba o total na sua página
+        // console.log(`${total} KZ`);
+
         
         cartItemscontainer.appendChild(cartItemElement)
 
