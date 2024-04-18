@@ -10,6 +10,7 @@ const addressInput = document.getElementById("address")
 const addressWarn = document.getElementById("address-warn")
 
 
+
 let cart = [];
 //Abrir o modal do carrinho
 cartBtn.addEventListener("click", function() {
@@ -40,9 +41,7 @@ menu.addEventListener("click", function(event){
 
         addToCart(name, price)
         //Adicionar no carrinho
-
     }
-
 })
 
 
@@ -67,55 +66,44 @@ function addToCart(name, price){
 }
 
 //Actualiza o carrinho
-function updateCartModal(){
+function updateCartModal() {
     cartItemscontainer.innerHTML = "";
     let total = 0;
 
-
+    //Percorrer cada linha para obter os valores ao carrinho
     cart.forEach(item => {
         const cartItemElement = document.createElement("div");
         cartItemElement.classList.add("flex", "justify-between", "mb-4", "flex-col")
 
-
         cartItemElement.innerHTML = `
         <div class="flex items-center justify-between">
             <div>
-            <p class="font-medium">${item.name}</p>
-            <p>Qtd: ${item.quantity}</p>
-            <p class="font-medium mt-2"> ${item.price.toFixed(3)} KZ</p>
+                <p class="font-medium">${item.name}</p>
+                <p>Qtd: ${item.quantity}</p>
+                <p class="font-medium mt-2"> ${item.price.toFixed(3)} KZ</p>
             </div>
         
-        
-        <button class="remove-from-cart-btn" data-name="${item.name}">
-        Remover
-        </button>
-        
+            <button class="remove-from-cart-btn" data-name="${item.name}">
+                Remover
+            </button>
         </div>
-        `
+        `;
 
+        //Operação do valor de cada item
+        total += item.price * item.quantity;
+        cartItemscontainer.appendChild(cartItemElement);
+    });
 
-        // let total = 0;
-
-        // // Adicione os itens à sua cesta e calcule o total
-        // itens.forEach(item => {
-            total += item.price * item.quantity;
-        // });
-
-        // Arredonde o total para 3 casas decimais
-        // total = total.toFixed(3);
-
-        // Exiba o total na sua página
-        // console.log(`${total} KZ`);
-
-        
-        cartItemscontainer.appendChild(cartItemElement)
-
-    })
-
-    cartTotal.textContent = total;
+    //Declaração das variáveis para o cálculo correcto do valor total
+    let valorTotalFormatado = formatarValorTotal(total);
+    let totalComKZ = valorTotalFormatado;
+    cartTotal.textContent = totalComKZ;
 
     cartCount.innerHTML = cart.length;
+}
 
+function formatarValorTotal(valorTotal) {
+    return valorTotal.toLocaleString("pt-PT", { minimumFractionDigits: 0, maximumFractionDigits: 3 }) + " KZ";
 }
 
 
