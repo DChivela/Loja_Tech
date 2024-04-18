@@ -82,7 +82,7 @@ function updateCartModal(){
             <div>
             <p class="font-medium">${item.name}</p>
             <p>Qtd: ${item.quantity}</p>
-            <p class="font-medium mt-2"> ${item.price.toFixed(2)} KZ</p>
+            <p class="font-medium mt-2"> ${item.price.toFixed(3)} KZ</p>
             </div>
         
         
